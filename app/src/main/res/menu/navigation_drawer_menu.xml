@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <item android:title="DashBoard"
+        android:id="@+id/nav_item_dashboard"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:iconTint="@color/orange_two"/>
+
+    <item android:title="Manage User"
+        android:id="@+id/nav_item_manage_user"
+        android:icon="@drawable/ic_baseline_supervised_user_circle_24" />
+
+    <item android:title="Sales Form"
+        android:id="@+id/nav_item_sales_form"
+        android:icon="@drawable/ic_baseline_note_24" />
+
+    <item android:title="R and D Forms"
+        android:id="@+id/nav_item_R_D"
+        android:icon="@drawable/ic_baseline_note_24" />
+
+    <item android:title="Operation Forms"
+        android:id="@+id/nav_item_operation_form"
+        android:icon="@drawable/ic_baseline_note_24"/>
+
+    <item android:title="GA Forms"
+        android:id="@+id/nav_item_GA_Form"
+        android:icon="@drawable/ic_baseline_note_24" />
+
+    <item android:title="Project Execution Department Form"
+        android:id="@+id/nav_item_project_execution"
+        android:icon="@drawable/ic_baseline_note_24"/>
+
+    <item android:title="Shared Form"
+        android:id="@+id/nav_item_shared_form"
+        android:icon="@drawable/ic_baseline_note_24"/>
+
+    <item android:title="Profile"
+        android:id="@+id/nav_item_profile"
+        android:icon="@drawable/ic_baseline_account_circle_24"/>
+
+    <item android:title="Logout"
+        android:id="@+id/nav_item_Logout"
+        android:icon="@drawable/ic_baseline_login_24"/>
+
+</menu>

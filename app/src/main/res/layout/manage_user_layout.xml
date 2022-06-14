@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="6dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+
+        <LinearLayout
+            android:background="#e4e4e4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="6dp">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/profile_user"
+                    android:tint="@color/orange"
+                    android:layout_marginTop="2dp"
+                    tools:ignore="UseAppTint" />
+
+
+                <TextView
+                    android:id="@+id/txt_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UserName :"
+                    android:textColor="@color/orange"
+                    android:layout_marginTop="3dp"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/txt_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UserName :"
+                    android:textColor="@color/orange"
+                    android:layout_marginTop="3dp"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="10dp"/>
+
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal"
+                       android:layout_marginRight="10dp"
+                       android:layout_alignParentRight="true">
+
+
+                       <TextView
+                           android:id="@+id/sr_no"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="S.No."
+                           android:layout_marginTop="3dp"
+                           android:textSize="14dp"
+                           android:textColor="@color/orange"/>
+
+                       <TextView
+                           android:id="@+id/txt_srno"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="S.No."
+                           android:layout_marginLeft="5dp"
+                           android:layout_marginTop="3dp"
+                           android:textSize="14dp"
+                           android:textColor="@color/orange"/>
+
+                   </LinearLayout>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="15dp"
+                        android:weightSum="2"
+                        android:layout_marginTop="15dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/txt_consumer_id_adapter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Email"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/spinner_color"/>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="15dp"
+                        android:weightSum="2"
+                        android:layout_marginTop="12dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_weight="1"
+                            >
+
+
+                            <TextView
+                                android:id="@+id/txt_name_adapter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="User Type"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="@color/spinner_color"/>
+
+
+                        </LinearLayout>
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="15dp"
+                        android:weightSum="2"
+                        android:layout_marginTop="12dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_weight="1">
+
+
+
+                            <TextView
+                                android:id="@+id/txt_meter_no_adapter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Department"
+                                android:textSize="15dp"
+                                android:layout_marginLeft="10dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/spinner_color"/>
+
+                        </LinearLayout>
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="15dp"
+                        android:weightSum="2"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_weight="1">
+
+
+
+                            <TextView
+                                android:id="@+id/txt_bill_status_adapter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Address"
+                                android:textSize="15dp"
+                                android:layout_marginLeft="10dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/spinner_color"/>
+
+                        </LinearLayout>
+
+
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="15dp"
+                        android:weightSum="2"
+                        android:layout_marginBottom="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_weight="1">
+
+
+
+                            <TextView
+                                android:id="@+id/txt_reporting_adapter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Reporting"
+                                android:textSize="15dp"
+                                android:layout_marginLeft="10dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/spinner_color"/>
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="15dp"
+                        android:weightSum="2"
+                        android:layout_marginBottom="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_weight="1">
+
+
+                            <TextView
+                                android:id="@+id/txt_created_on_adapter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Created On"
+                                android:textSize="15dp"
+                                android:layout_marginLeft="10dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/spinner_color"/>
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="14dp">
+
+
+                        <TextView
+                            android:id="@+id/txt_emailid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="khjjhj"
+                            android:textColor="@color/text_colorone"
+                            android:textSize="15dp">
+
+                        </TextView>
+
+
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginRight="14dp">
+
+                        <TextView
+                            android:id="@+id/txt_userType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="khjjhj"
+                            android:textColor="@color/text_colorone"
+                            android:textSize="15dp">
+
+                        </TextView>
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginRight="14dp">
+
+
+                        <TextView
+                            android:id="@+id/txt_department"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="khjjhj"
+                            android:textColor="@color/text_colorone"
+                            android:textSize="15dp">
+
+                        </TextView>
+
+
+                    </RelativeLayout>
+
+
+
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="14dp">
+
+
+                        <TextView
+                            android:id="@+id/txt_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="jjuuu"
+                            android:textColor="@color/text_colorone"
+                            android:textSize="15dp">
+
+                        </TextView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="14dp">
+
+
+                        <TextView
+                            android:id="@+id/txt_reporting_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="jjuuu"
+                            android:textColor="@color/text_colorone"
+                            android:textSize="15dp">
+
+                        </TextView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="14dp">
+
+
+                        <TextView
+                            android:id="@+id/txt_created_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="jjuuu"
+                            android:textColor="@color/text_colorone"
+                            android:textSize="15dp">
+
+                        </TextView>
+
+                    </RelativeLayout>
+
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:paddingBottom="10dp"
+              android:layout_weight="2">
+
+              <LinearLayout
+                  android:id="@+id/ll_edit"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/bt_create"
+                  android:orientation="horizontal"
+                  android:layout_marginRight="@dimen/_10sdp"
+                  android:padding="10dp"
+                  android:gravity="center"
+                  android:layout_marginLeft="10dp"
+                  android:layout_weight="1">
+
+                  <ImageView
+                      android:layout_width="20dp"
+                      android:layout_height="20dp"
+                      android:src="@drawable/ic_baseline_edit_24" />
+
+                  <TextView
+                      android:id="@+id/txt_edit"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="4dp"
+                      android:text="Edit"
+                      android:textColor="@color/white" />
+
+              </LinearLayout>
+
+              <LinearLayout
+                  android:id="@+id/ll_delete"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/bt_create"
+                  android:orientation="horizontal"
+                  android:padding="10dp"
+                  android:gravity="center"
+                  android:layout_marginRight="@dimen/_10sdp"
+                  android:layout_weight="1">
+
+                  <ImageView
+                      android:layout_width="20dp"
+                      android:layout_height="20dp"
+                      android:src="@drawable/ic_baseline_delete_24" />
+
+                  <TextView
+                      android:id="@+id/txt_delete"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="4dp"
+                      android:text="Delete"
+                      android:textColor="@color/white" />
+
+              </LinearLayout>
+
+
+          </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

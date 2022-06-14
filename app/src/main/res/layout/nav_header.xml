@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:id="@+id/headerlayout"
+    android:background="@drawable/round_corner">
+
+    <!-- <ImageView
+         android:layout_width="156dp"
+         android:layout_height="match_parent"
+         android:id="@+id/imageView"
+         android:background="@drawable/splashlogo"
+         android:layout_gravity="center_horizontal" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_15sdp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:src="@drawable/fchod"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+
+            <TextView
+                android:id="@+id/txt_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Prateek Maggo"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txt_rs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs 0.0"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="17dp"
+                    android:textColor="#2d5670"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

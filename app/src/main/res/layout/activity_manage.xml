@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eeeeee">
+
+    <LinearLayout
+        android:id="@+id/ll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/orange_three"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_nav_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_baseline_arrow_back_24">
+
+            </ImageView>
+
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dim_40"
+            >
+
+            <TextView
+                android:id="@+id/txt_manageUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="7dp"
+                android:text="Manage"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_full_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_10sdp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:paddingBottom="@dimen/_10sdp">
+
+            <LinearLayout
+                android:id="@+id/ll_mange_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1.1"
+                android:layout_below="@+id/ll_layout"
+                android:layout_marginTop="@dimen/_10sdp">
+
+
+                <EditText
+                    android:id="@+id/edit_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/et_search"
+                    android:padding="6dp"
+                    android:hint="Search"
+                    android:singleLine="true"
+                    android:elevation="1dp"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:drawableRight="@drawable/ic_baseline_search_24"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_mange_user_role"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1.1"
+                android:layout_below="@+id/ll_layout"
+                android:layout_marginTop="@dimen/_10sdp">
+
+
+                <EditText
+                    android:id="@+id/edit_search_role"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/et_search"
+                    android:padding="6dp"
+                    android:hint="Search"
+                    android:singleLine="true"
+                    android:elevation="1dp"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:drawableRight="@drawable/ic_baseline_search_24"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_form_reciver_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1.1"
+                android:layout_below="@+id/ll_layout"
+                android:layout_marginTop="@dimen/_10sdp">
+
+
+                <EditText
+                    android:id="@+id/edit_search_form_reciver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/et_search"
+                    android:padding="6dp"
+                    android:hint="Search"
+                    android:singleLine="true"
+                    android:elevation="1dp"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:drawableRight="@drawable/ic_baseline_search_24"/>
+
+
+            </LinearLayout>
+
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".9"
+                    android:layout_below="@+id/ll_layout"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <Spinner
+                        android:id="@+id/spinner_one"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/bg_spinner"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:popupBackground="@color/spinner_color"
+                        android:layout_marginRight="@dimen/_10sdp"/>
+
+                    <ImageView
+                        android:layout_gravity="end|bottom"
+                        android:contentDescription="@null"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:background="@drawable/ic_baseline_arrow_drop_down_24" />
+
+                </FrameLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_user_one"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:paddingBottom="@dimen/_10sdp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:layout_below="@+id/ll_layout"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <Spinner
+                        android:id="@+id/spinner_two"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/bg_spinner"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:popupBackground="@color/spinner_color"
+                        android:layout_marginRight="@dimen/_1sdp"/>
+
+                    <ImageView
+                        android:layout_gravity="end|bottom"
+                        android:contentDescription="@null"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:background="@drawable/ic_baseline_arrow_drop_down_24" />
+
+                </FrameLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight=".8"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+
+                    <EditText
+                        android:id="@+id/edit_search_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/et_search"
+                        android:padding="6dp"
+                        android:hint="Search"
+                        android:singleLine="true"
+                        android:elevation="1dp"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:layout_marginLeft="5dp"
+                        android:drawableRight="@drawable/ic_baseline_search_24"/>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:id="@+id/ll_create"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/bt_create"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_baseline_add_circle_24" />
+
+                    <TextView
+                        android:id="@+id/txt_create_new_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:text="Create New User"
+                        android:textColor="@color/white" />
+
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_user"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_account_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/text_nooffer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Data Found"
+                    android:textColor="@color/spinner_color"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+
+
+            </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_user_role"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:paddingBottom="@dimen/_10sdp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:layout_below="@+id/ll_layout"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <Spinner
+                        android:id="@+id/spinner_three"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/bg_spinner"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:popupBackground="@color/spinner_color"
+                        android:layout_marginRight="@dimen/_1sdp"/>
+
+                    <ImageView
+                        android:layout_gravity="end|bottom"
+                        android:contentDescription="@null"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:background="@drawable/ic_baseline_arrow_drop_down_24" />
+
+                </FrameLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight=".8"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+
+                    <EditText
+                        android:id="@+id/edit_search_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/et_search"
+                        android:padding="6dp"
+                        android:hint="Search"
+                        android:singleLine="true"
+                        android:elevation="1dp"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:layout_marginLeft="5dp"
+                        android:drawableRight="@drawable/ic_baseline_search_24"/>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:id="@+id/ll_create_role"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/bt_create"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_baseline_add_circle_24" />
+
+                    <TextView
+                        android:id="@+id/txt_create_userrole"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:text="Create User Role"
+                        android:textColor="@color/white" />
+
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_user_role"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView_user_role"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/ll_account_txtone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerInParent="true">
+
+                    <TextView
+                        android:id="@+id/text_noofferone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No Data Found"
+                        android:textColor="@color/spinner_color"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:textStyle="bold"
+                        android:textSize="20dp"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_form_reciver"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:paddingBottom="@dimen/_10sdp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:layout_below="@+id/ll_layout"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <Spinner
+                        android:id="@+id/spinner_four"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/bg_spinner"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:popupBackground="@color/spinner_color"
+                        android:layout_marginRight="@dimen/_1sdp"/>
+
+                    <ImageView
+                        android:layout_gravity="end|bottom"
+                        android:contentDescription="@null"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:background="@drawable/ic_baseline_arrow_drop_down_24" />
+
+                </FrameLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight=".8"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+
+                    <EditText
+                        android:id="@+id/edit_search_four"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/et_search"
+                        android:padding="6dp"
+                        android:hint="Search"
+                        android:singleLine="true"
+                        android:elevation="1dp"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:layout_marginLeft="5dp"
+                        android:drawableRight="@drawable/ic_baseline_search_24"/>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:id="@+id/ll_create_form_receiver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/bt_create"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_baseline_add_circle_24" />
+
+                    <TextView
+                        android:id="@+id/txt_create_formreciver"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:text="Create Department form Reciver Config"
+                        android:textColor="@color/white" />
+
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_form_reciver"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView_Form_reciver"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/ll_account_txttwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerInParent="true">
+
+                    <TextView
+                        android:id="@+id/text_nooffertwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No Data Found"
+                        android:textColor="@color/spinner_color"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:textStyle="bold"
+                        android:textSize="20dp"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
